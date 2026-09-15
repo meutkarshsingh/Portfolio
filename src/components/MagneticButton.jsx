@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
 
-export default function MagneticButton({ children, className = '', onClick, href, target, rel, type = 'button', disabled = false }) {
+export default function MagneticButton({ children, className = '', onClick, href, target, rel, download, type = 'button', disabled = false }) {
   const ref = useRef(null);
 
   const handleMove = (event) => {
@@ -40,6 +40,7 @@ export default function MagneticButton({ children, className = '', onClick, href
         href={href}
         target={target}
         rel={rel}
+        download={download}
         transition={{ type: 'spring', stiffness: 260, damping: 18 }}
       >
         {children}

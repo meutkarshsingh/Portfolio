@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Float, PerspectiveCamera, Environment, RoundedBox, Html, Line } from '@react-three/drei';
 import * as THREE from 'three';
-import { Code2, Mail } from 'lucide-react';
+import { Code2, Download, Mail } from 'lucide-react';
 import { profile } from '../../data/profile';
 import MagneticButton from '../MagneticButton';
 
@@ -458,6 +458,15 @@ export default function Hero() {
               >
                 <Code2 size={18} />
                 GitHub
+              </MagneticButton>
+
+              <MagneticButton
+                href={profile.resume}
+                download
+                className="px-6 py-3 glass hover:bg-card text-white rounded-lg font-medium flex items-center gap-2"
+              >
+                <Download size={18} />
+                Download Resume
               </MagneticButton>
             </motion.div>
           </motion.div>
