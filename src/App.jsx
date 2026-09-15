@@ -19,9 +19,10 @@ function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-background text-white">
       <Background />
+      <div className="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.04),transparent_55%)]" />
       <CustomCursor />
       <Navbar />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <PhotoSection />
         <About />

@@ -118,7 +118,7 @@ function ProjectCard({ project, delay, onClick }) {
       <img
         src={project.image}
         alt={project.imageAlt}
-        className="w-full aspect-[16/9] object-cover rounded-lg mb-5 transition-transform duration-500 group-hover:scale-[1.03]"
+        className="relative w-full aspect-[16/9] object-cover rounded-lg mb-5 transition-transform duration-500 group-hover:scale-[1.03]"
       />
 
       <div className="mb-4">

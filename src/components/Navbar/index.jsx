@@ -52,7 +52,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'glass py-4' : 'py-6'
+        scrolled ? 'glass py-4 shadow-[0_8px_30px_rgba(15,23,42,0.32)] border-b border-white/10' : 'py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -80,7 +80,7 @@ export default function Navbar() {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className={`text-sm font-medium transition-colors relative ${
+                className={`text-sm font-medium transition-colors relative px-1 py-1 ${
                   activeSection === item.href.substring(1)
                     ? 'text-primary'
                     : 'text-gray-300 hover:text-white'
