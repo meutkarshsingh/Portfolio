@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageSquare, X, Send, Bot, User } from 'lucide-react';
+import { profile } from '../../data/profile';
 
 const mockResponses = {
   'projects': `Utkarsh has built several projects including:\n\n• Diabetes Prediction System - ML-based web app for diabetes risk prediction\n• Face Recognition Attendance System - Automated attendance using computer vision\n• Expense Tracker for Students - Desktop app for expense management\n• Garbage Collection Algorithm Visualizer - Interactive visualization of GC algorithms\n\nYou can view all projects in the Projects section or check the GitHub repositories.`,
@@ -9,7 +10,7 @@ const mockResponses = {
   
   'diabetes': `The Diabetes Prediction System is a machine learning-based web application that predicts diabetes risk based on health parameters. It uses Python, Machine Learning, Flask, and Scikit-learn. Key features include data preprocessing, missing-value handling, feature scaling, model training, and a Flask web interface for user interaction.`,
   
-  'contact': `You can contact Utkarsh through:\n\nEmail: meutkarsh2004singh@gmail.com\nGitHub: https://github.com/meutkarshsingh\nLinkedIn: https://www.linkedin.com/in/utkarsh-singh\n\nOr use the contact form in the Contact section.`,
+  'contact': `You can contact Utkarsh through:\n\nEmail: ${profile.email}\nGitHub: ${profile.github}\nLinkedIn: ${profile.linkedin}\n\nOr use the contact form in the Contact section.`,
   
   'github': `Utkarsh's GitHub profile is available at: https://github.com/meutkarshsingh\n\nHe actively contributes to open source and maintains several repositories including AI/ML projects, web applications, and algorithm visualizers.`,
   
