@@ -4,7 +4,7 @@ export const profile = {
   subtitle: "B.Tech CSE (AI/ML) Student",
   email: "meutkarsh2004singh@gmail.com",
   github: "https://github.com/meutkarshsingh",
-  linkedin: "https://www.linkedin.com/in/utkarsh-singh",
+  linkedin: "https://www.linkedin.com/in/utkarsh-sing/",
   resume: "/resume.pdf",
   bio: "I build intelligent applications and software solutions using AI, machine learning, and modern development technologies.",
   interests: [
